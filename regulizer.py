@@ -1,8 +1,7 @@
 import Image
 import math
 import random
- 
-thresh= 50
+import sys
 
 color_classes=[]
 colors_in_class=[]
@@ -22,16 +21,15 @@ def recompute_mean(curr,lst,toAdd):
 def regulizer(img):
 	global color_classes, colors_in_class
 	pixels = img.load()
-	classes_per_pixel= [[0 for x in xrange(img.size[0])] for y in xrange(img.size[1])]
+	classes_per_pixel= [[0 for x in xrange(img.size[1])] for y in xrange(img.size[0])]
 	for i in range(img.size[0]):    # for every pixel:
 		for j in range(img.size[1]):
-			print i,j
 			#print i,j
 			found_match= False
 			for ind,color in enumerate(color_classes):
 				if norm(pixels[i,j],color) <= thresh:
 					found_match= True
-					if random.randint(0,50)==7:
+					if random.randint(0,compute_freq)==7:
 						color_classes[ind]= recompute_mean(color_classes[ind],colors_in_class[ind],pixels[i,j])
 					colors_in_class[ind] += [pixels[i,j]]
 					classes_per_pixel[i][j]= ind
@@ -41,26 +39,26 @@ def regulizer(img):
 			if not found_match:
 				color_classes += [pixels[i,j]]
 				colors_in_class += [[pixels[i,j]]]
-	print "DONE REGULIZING"
 	for i in range(img.size[0]):    # for every pixel:
 		for j in range(img.size[1]):
 			ind= classes_per_pixel[i][j]
 			pixels[i,j] = (color_classes[ind][0],color_classes[ind][1],color_classes[ind][2]) # set the colour accordingly
-	print color_classes
 	img.show()
 
 
 
 if __name__=="__main__":
-	img = Image.new( 'RGB', (255,255), "black") # create a new black image
+	global thresh, compute_freq
+	thresh= int(sys.argv[1])
+	compute_freq= int(sys.argv[2])
+	#img = Image.new( 'RGB', (255,255), "black") # create a new black image
 	#img.show()
-	pixels = img.load() # create the pixel map
-	 
-	for i in range(img.size[0]):    # for every pixel:
-	    for j in range(img.size[1]):
-	        pixels[i,j] = (100, i, j) # set the colour accordingly
-	 
+	#pixels = img.load() # create the pixel map
+	#for i in range(img.size[0]):    # for every pixel:
+	#    for j in range(img.size[1]):
+	#        pixels[i,j] = (100, i, j) # set the colour accordingly
 	#img.show()
-	img= Image.open("elvis.jpg")
+
+	img= Image.open("rondo2")
 	img.show()
 	regulizer(img)
