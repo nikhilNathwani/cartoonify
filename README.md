@@ -1,4 +1,4 @@
-kMeansColor
+kMeansPainting
 ==========
 
 Given a picture and a number *k*, this script outputs a version of your picture that only uses *k* colors. But it picks those *k* colors wisely (using the [k-Means Clustering](http://en.wikipedia.org/wiki/K-means_clustering) Algorithm) so as to preserve the original context of the image. You'd be amazed how much trendier you look with fewer colors. 
@@ -26,5 +26,5 @@ When the script is complete, a new version of your image will appear containing 
 
 ##Examples
 
-
+![barcelona](http://imgur.com/d4RNiAR)
 
