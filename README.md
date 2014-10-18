@@ -25,6 +25,6 @@ When the script is complete, a new version of your image will appear containing 
 
 
 ##Examples
-
-![barcelona](http://imgur.com/d4RNiAR)
+###k=2:
+![barca](http://i.imgur.com/GWUVRmB.jpg) ![barca2](http://i.imgur.com/m3yCu4n.png)
 
