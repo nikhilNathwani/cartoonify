@@ -14,10 +14,10 @@ sudo port install py27-pil
 
 3) **Run the code** by entering the following into your terminal:
 ```
-python2.7 kMeansColor.py [filepath to picture] [number k]
+python2.7 kMeansPainting.py [filepath to picture] [number k]
 ```
 
-Note that your terminal needs to be in the folder containing kMeansColor.py; if this is not the case, then enter `cd [path to folder containing kMeansColor.oy]` before running the above line of code. 
+Note that your terminal needs to be in the folder containing kMeansPainting.py; if this is not the case, then enter `cd [path to folder containing kMeansPainting.py]` before running the above line of code. 
 
 When the script is complete, a new version of your image will appear containing only the most identifying *k* colors (it will NOT overwrite your original image). Most jpg/png files take ~2 seconds to complete, while high-resolution photos may take up to a minute (pending further testing).
 
