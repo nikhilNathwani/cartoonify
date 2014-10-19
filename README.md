@@ -26,5 +26,5 @@ When the script is complete, a new version of your image will appear containing 
 
 ##Example
 ###Original | k=2:
-![barca](http://i.imgur.com/GWUVRmB.jpg)  ![barca2](http://i.imgur.com/m3yCu4n.png)
+![barca](http://i.imgur.com/GWUVRmB.jpg) ![barca2](http://i.imgur.com/m3yCu4n.png)
 
