@@ -24,7 +24,7 @@ When the script is complete, a new version of your image will appear containing 
 4) **Report errors** that you encounter by letting me know (email: njn27@cornell.edu, twitter: @nikhilhyphen). I hacked this together quickly and haven't done much error handling or testing for corner cases, so if you let me know if run into issues I can update the code accordingly!
 
 
-##Examples
-###k=2:
-![barca](http://i.imgur.com/GWUVRmB.jpg) ![barca2](http://i.imgur.com/m3yCu4n.png)
+##Example
+###Original | k=2:
+![barca](http://i.imgur.com/GWUVRmB.jpg)  ![barca2](http://i.imgur.com/m3yCu4n.png)
 
