@@ -21,7 +21,7 @@ Note that your terminal needs to be in the folder containing kMeansPainting.py; 
 
 When the script is complete, a new version of your image will appear containing only the most identifying *k* colors (it will NOT overwrite your original image). Most jpg/png files take ~2 seconds to complete, while high-resolution photos may take up to a minute (pending further testing).
 
-4) **Report errors** that you encounter by letting me know (email: njn27@cornell.edu, twitter: @nikhilhyphen). I hacked this together quickly and haven't done much error handling or testing for corner cases, so if you let me know if run into issues I can update the code accordingly!
+4) **Report errors** that you encounter by letting me know (email: njn27@cornell.edu, twitter: @nikhilhyphen). I hacked this together quickly and haven't done much error handling or testing for corner cases, so let me know if you run into issues and I can update the code accordingly!
 
 
 ##Example
